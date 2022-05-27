@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=10px, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 10px solid #f2f2f2;}
+
+.h1{
+	font-size: 48px;
+	color: rgb(6, 106, 117);
+	padding: 2px 0 10px 0;
+	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.h1{
+	background: 
+	-webkit-repeating-linear-gradient(-45deg, 
+		rgb(18, 83, 93) , 
+		rgb(18, 83, 93) 20px,
+		rgb(64, 111, 118) 20px,
+		rgb(64, 111, 118) 40px,
+		rgb(18, 83, 93) 40px);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.h2{
+	font-size: 40px;
+	color: rgb(6, 106, 117);
+	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+	font-weight: bold;
+	text-align:center;
+}
+
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 12px 20px;
+  margin:4px;
+  border: 1px solid rgb(178, 178, 178);
+  display: inline-block;
+  border-radius: 3px;
+  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+}
+
+button {
+  background-color: rgb(61, 157, 179);
+  color: #fff;
+  padding: 14px 20px;
+  border: 1px solid rgb(28, 108, 122);
+  cursor: pointer;
+  width: 40%;
+  font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+button input:focus{
+	background: rgb(40, 137, 154);
+	position: relative;
+	top: 1px;
+	border: 1px solid rgb(12, 76, 87);	
+	box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 1px;
+  width: 600px;
+}
+
+</style>
+</head>
+<body style= "background-color: Lavender;">
+
+<h1>Precious Heaven Cinema</h1>
+
+
+<div class="container" style="margin: 0 auto">
+  <form action="action_page.php" method="post">
+   <h2>Log in</h2>
+    <label for="uname"><b>Username</b>
+	</label> 
+    <input type="text" placeholder="Enter Username" name="uname" required="required" type="email">
+	<br><br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required="required" type="password">
+    <br><br> 
+	<button type="submit" name="admin" value="admin" >Admin Login</button>
+    <button type="submit" name="customer" value="customer">Customer Login</button>
+
+	<br><br>
+	</form>
+	<form action="/registration_page.html" method="post">
+	<div class="container" style="margin: 0 auto">
+	<p class="change_link" style="font-size:12px">  
+		Dont have an account?
+		<a href="registration_page.html" class="to_register" style="font-size:12px"> Sign Up </a>
+	</p>
+	</div>
+	</form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 10px;  solid #f2f2f2;}
+label { float: left; width: 200px; }
+
+h1{
+	font-size: 48px;
+	color: rgb(6, 106, 117);
+	padding: 2px 0 10px 0;
+	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 30px;
+}
+h1{
+	background: 
+	-webkit-repeating-linear-gradient(-45deg, 
+		rgb(18, 83, 93) , 
+		rgb(18, 83, 93) 20px,
+		rgb(64, 111, 118) 20px,
+		rgb(64, 111, 118) 40px,
+		rgb(18, 83, 93) 40px);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+input[type=text] {
+  width: 70%;
+  padding: 10px 20px;
+  margin:4px;
+  border: 1px solid rgb(178, 178, 178);
+  
+  border-radius: 3px;
+  float: left;
+  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+}
+
+button {
+  background-color: rgb(61, 157, 179);
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid rgb(28, 108, 122);
+  cursor: pointer;
+  width: 30%;
+  font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 250px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+  opacity: 0.8;
+}
+.container {
+  padding: 1px;
+  width: 700px;
+}
+
+</style>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<button class="navbar-toggler navbar-dark" type="button" datatoggle="collapse" data-target="#main-navigation">
+		<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="main-navigation">
+	<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" href="mainLandingPage_admin.php">Back to Main Page</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Logout</a>
+		</li>
+	</ul>
+</div>
+</nav>
+
+
+</head>
+<body style= "background-color: Lavender;">
+
+<h1>Add a Movie</h1>
+
+<div class="container" style="margin: 0 auto">
+  <form action="add_movie.php" method="post">
+    <label for="mname"><b>Movie Name:</b>
+	</label> 
+    <input type="text"  name="mname" required="required">
+	<br><br>
+    <label for="seats"><b>Number of Seats:</b></label>
+    <input type="text" name="seats" required="required" >
+    <br><br> 
+	<label for="time"><b>Screening Time:</b></label>
+    <input type="text" name="time" required="required" >
+    <br><br> 
+	<label for="theater"><b>Theater:</b></label>
+	<input type="text" name="theater" required="required" >
+	<br><br>
+	<button class="button" type="submit" name="sub" >Submit</button>
+	</form>
+</div>
+
+</body>
+</html>
